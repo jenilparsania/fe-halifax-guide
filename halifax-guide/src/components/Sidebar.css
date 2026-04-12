@@ -1,0 +1,46 @@
+.sidebar{
+    width: 280px;
+    background:white;
+    border-right: 1px solid #e0e0e0;
+    padding: 1.5em;
+    position:relative;
+    flex-shrink:0;
+
+}
+
+.sidebar--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.sidebar__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+}
+
+.sidebar__colour-bar {
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.sidebar__name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar__vibe {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
