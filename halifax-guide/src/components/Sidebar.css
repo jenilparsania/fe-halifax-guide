@@ -8,7 +8,7 @@
 
 }
 
-.sidebar--empty {
+.sidebar-empty {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   font-size: 14px;
 }
 
-.sidebar__close {
+.sidebar_close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -27,19 +27,19 @@
   color: #888;
 }
 
-.sidebar__colour-bar {
+.sidebar_colour-bar {
   height: 6px;
   border-radius: 3px;
   margin-bottom: 1rem;
 }
 
-.sidebar__name {
+.sidebar_name {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.sidebar__vibe {
+.sidebar_vibe {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
