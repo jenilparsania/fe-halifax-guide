@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, Polygon, Tooltip, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import neighbourhoods from '../data/neighbourhoods'
-import places from '../data/places'
 
 const HALIFAX_CENTER = [44.6488, -63.5752]
 
@@ -21,7 +20,7 @@ const customIcon = L.divIcon({
   popupAnchor: [0, -10],
 })
 
-function MapView({ onSelectNeighbourhood }) {
+function MapView({ onSelectNeighbourhood , places }) {
   return (
     <MapContainer
       center={HALIFAX_CENTER}
