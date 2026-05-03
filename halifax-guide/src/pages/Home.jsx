@@ -14,7 +14,8 @@ function Home() {
     const matchesCategory = activeCategory === 'all' || place.category === activeCategory
 
     const matchesSearch = place.name.toLowerCase().includes(searchQuery.toLowerCase())
-
+    console.log("searched anything from Home.jsx");
+    
     return matchesCategory && matchesSearch
 
   })

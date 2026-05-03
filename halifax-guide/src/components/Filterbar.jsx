@@ -23,7 +23,7 @@ function Filterbar({
                 {CATEGORIES.map((cat)=>(
                     <button 
                     key={cat.value}
-                    className={`filter-btn ${activeCategory === cat.value ? 'fiter-btn--active': ''}`}
+                    className={`filter-btn ${activeCategory === cat.value ? 'filter-btn_active': ''}`}
                     onClick={()=> onCategoryChange(cat.value)}
 
                     >
