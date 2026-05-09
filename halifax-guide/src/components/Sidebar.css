@@ -5,6 +5,8 @@
     padding: 1.5em;
     position:relative;
     flex-shrink:0;
+    overflow-y:auto;
+    
 
 }
 

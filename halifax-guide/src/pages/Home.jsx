@@ -46,7 +46,7 @@ function Home() {
   return(
     <div className='app'>
       <Sidebar neighbourhood={selected} onClose={()=>setSelected(null)}/>
-      <div style={{flex:1, display: 'flex' , flexDirection: 'column'}}> 
+      <div className='app_main'> 
         <Filterbar 
           activeCategory={activeCategory}
           onSearchChange={setSearchQuery}
@@ -55,7 +55,17 @@ function Home() {
           resultCount={filteredPlaces.length}
           
           />
-        <Mapview onSelectNeighbourhood={setSelected} places= {filteredPlaces}/>
+
+          <div className='app_map'>
+            {loading ? (
+              <div style={{display:'flex',alignItems: 'center',justifyContent: 'center',height:'100%',color: '#888',fontSize:14}}>
+                Loading places ... 
+              </div>
+            ): (
+               <Mapview onSelectNeighbourhood={setSelected} places= {filteredPlaces}/>
+            )}
+          </div>
+       
         
       </div>
 
