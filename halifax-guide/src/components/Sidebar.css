@@ -6,7 +6,7 @@
     position:relative;
     flex-shrink:0;
     overflow-y:auto;
-    
+
 
 }
 
@@ -27,6 +27,7 @@
   font-size: 16px;
   cursor: pointer;
   color: #888;
+  line-height: 1;
 }
 
 .sidebar_colour-bar {
@@ -39,10 +40,48 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #222;
 }
 
 .sidebar_vibe {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+  margin-bottom:1rem;
+}
+
+.sidebar_link { 
+  font-size: 14px;
+  color: #185FA5;
+  text-decoration : none;
+
+}
+.sidebar_link:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:768px){
+  .sidebar{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    border-right: none;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 16px 16px 0 0;
+    padding : 1.25rem 1.25rem 2rem;
+    z-index: 1000;
+    max-height: 50vh;
+    transform: translate(100%);
+    transition: transform 0.25s ease;
+  }
+
+  .sidebar.sidebar-visible{
+    transform : translateY(0);
+  }
+
+  .sidebar-empty{
+    display: none;
+  }
 }
