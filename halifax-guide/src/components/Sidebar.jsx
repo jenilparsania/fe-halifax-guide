@@ -16,7 +16,6 @@ function Sidebar({neighbourhood,onClose}){
         return(
             <div className={classes}>
                 <p> Click a neighbourhood on the map</p>
-
             </div>
         )
     }

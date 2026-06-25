@@ -61,3 +61,33 @@
   color: #888;
   white-space: nowrap;
 }
+
+@media (max-width : 768px){
+  .filter-bar{
+    flex-direction : column;
+    align-items : stretch;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .filter-bar_categories {
+    overflow-x : auto;
+    flex-wrap : nowrap;
+    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+
+  }
+
+  .filter-bar_right{
+    width: 100%;
+  }
+
+  .filter-bar_search{
+    width: 100%;
+  }
+
+  .filter-bar_count{
+    display : none;
+  }
+}
+
